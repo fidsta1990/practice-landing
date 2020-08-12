@@ -1,0 +1,149 @@
+/* Desktop View */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/photography-of-bridge-during-nighttime-1239162.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+/* Header Section  */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-bottom: 3px solid lightgrey;
+    width: 95%;
+}
+
+.logo {
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+ul li {
+    display: inline-block;
+    text-align: center;
+}
+
+ul li a {
+    padding: 5px 20px;
+    /* makes border of list tabs visible */
+    /* border: 1px solid #fff; */
+    border: 1px solid transparent;
+    /* makes border of list tabs invisible until hovered upon to see effect */
+    transition: 0.6s ease;
+}
+
+/* Keeps the tab selected for the page currently on */
+ul li.active a {
+    background-color: #fff;
+    color: #000;
+}
+
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Main section  */
+
+main {
+    max-width: 1200px;
+    min-height: 70vh;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+.hero1 {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero1 h1 {
+    font-size: 4rem;
+}
+
+.hero1 p {
+    font-size: 2rem;
+}
+
+.links {
+    padding-top: 50px;
+}
+
+.btn {
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    font-size: 1.5rem;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Tablet View  */
+
+@media (max-width:768px) {
+
+    .container {
+        max-width: 800px;
+        min-height: 100vh;
+        margin: 0 auto;
+    }
+
+    /* Header Section  */
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 3px solid lightgrey;
+        width: 600px;
+    }
+
+    .links {
+        height: 33px;
+    }
+
+    ul {
+        height: 30px;
+    }
+}
+
+
+/* Mobile View  */
+
+@media (max-width:320px) {}
